@@ -1,0 +1,63 @@
+.input-form {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.input-form__heading h2 {
+    font-weight: normal;
+}
+
+/* 確認フォーム全体 */
+.form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* テーブル内左1列 */
+.confirm-table__header{
+    font-weight: normal;
+    text-align: left;
+    width: 20%;
+    font-size: 15px;
+}
+
+/* テーブル内右1列 */
+.confirm-table__text{
+    width: 70%;
+}
+.confirm-table__text input{
+    border: none;
+    font-size:  15px;
+    width: 70%;
+    height: 40px;
+    margin-left: 30px;
+}
+
+/* ボタン */
+.form-button{
+    margin-top: 50px;
+    width: 30%;
+    text-align: center;
+}
+
+.form-button__retype{
+    margin-right: 10px;
+    width: 25%;
+    height: 40px;
+    border:1px solid #A9A9A9;
+    cursor: pointer;
+    color: #696969;
+    background-color: #FFDEAD;
+}
+
+.form-button__send {
+    margin-right: 10px;
+    width: 25%;
+    height: 40px;
+    border: 1px solid #A9A9A9;
+    cursor: pointer;
+    color: #696969;
+    background-color: #87CEFA;
+}

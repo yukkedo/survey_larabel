@@ -1,0 +1,76 @@
+.input-form{
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.input-form__heading h2{
+    font-weight: normal;
+}
+
+.form{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form__group{
+    padding: 20px 20px;
+    display: flex;
+}
+
+.form__group--item{
+    width: 20%;
+    height: 15px;
+    font-size: 15px;
+    align-content: center;
+}
+
+.form__group--content{
+    display: inline-block;
+    width: 70%;
+    height: 20px;
+}
+
+.form__group--content-text{
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.select-button{
+    display: inline-flex;
+    align-items: center;
+}
+
+.select-button:first-of-type{
+    margin-right: 50px;
+}
+
+.select-button input{
+    transform: scale(2.0);
+    margin: 0 20px;
+}
+
+/* ご意見 */
+.form__group--content-textarea {
+    width: 50%;
+    height: 200px;
+    font-size: 15px;
+}
+
+/* 確認ボタン */
+.form__button{
+    margin: 200px auto 0;
+    text-align: center;
+}
+
+.form__button--submit{
+    padding: 15px;
+    width: 15%;
+    height: 50px;
+    background-color: #87CEFA;
+    border: 1px solid #A9A9A9;
+    cursor: pointer;
+    color: #696969;
+}
