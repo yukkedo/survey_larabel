@@ -15,13 +15,14 @@
             <div class="input-form__heading">
                 <h2>システムへのご意見をお聞かせください</h2>
             </div>
-            <form action="" class="form">
+            <form class="form" action="/servey/confirm" method="post">
+                @csrf
                 <div class="form__group">
                     <div class="form__group--item">
                         <span>氏名</span>
                     </div>
                     <div class="form__group--content">
-                        <input class="form__group--content-text" type="text" value="" placeholder="入力してください">
+                        <input class="form__group--content-text" type="text" name="name" value="" placeholder="入力してください">
                     </div>
                     <div class="form__error">
 
@@ -33,11 +34,11 @@
                     </div>
                     <div class="form__group--content">
                         <label class="select-button">
-                            <input class="input__radio-button" type="radio" checked>男性
+                            <input class="input__radio-button" type="radio" name="gender" value="男性" checked>男性
                         </label>
                         <label class="select-button">
                             <input class="input__radio-button"
-                                type="radio">女性
+                                type="radio" name="gender" value="女性">女性
                         </label>
                     </div>
                     <div class="form__error">
@@ -49,7 +50,15 @@
                         <span>年代</span>
                     </div>
                     <div class="form__group--content">
-                        <select class="form__group--content-text" name="" id="" placeholder="選択してください"></select>
+                        <select class="form__group--content-text" name="age">
+                            <option value="0">選択してください</option>
+                            <option value="10">10代以下</option>
+                            <option value="20">20代</option>
+                            <option value="30">30代</option>
+                            <option value="40">40代</option>
+                            <option value="50">50代</option>
+                            <option value="60">60代</option>
+                        </select>
                     </div>
                     <div class="form__error">
 
@@ -60,7 +69,7 @@
                         <span>メールアドレス</span>
                     </div>
                     <div class="form__group--content">
-                        <input class="form__group--content-text" type="text" placeholder="入力してください">
+                        <input class="form__group--content-text" type="email" name="email" placeholder="入力してください">
                     </div>
                     <div class="form__error">
 
@@ -71,7 +80,7 @@
                         <span>ご意見</span>
                     </div>
                     <div class="form__group--content">
-                        <textarea class="form__group--content-textarea" name="content" placeholder="入力してください" id=""></textarea>
+                        <textarea class="form__group--content-textarea" name="feedback" placeholder="入力してください"></textarea>
                     </div>
                 </div>
 
